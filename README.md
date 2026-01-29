@@ -16,9 +16,10 @@ It uses **AWS Lambda, DynamoDB, SNS, S3**, and **Python** to automate weather no
 ![JSON](https://img.shields.io/badge/JSON-Data-lightblue)
 ![Pillow](https://img.shields.io/badge/Pillow-Image%20Generation-red)
 
+
+![output](images/w1)
 ---
-![output](images/02.png)
-![output](images/o1.png)
+
 ## 🌐 Live Project Demo
 
 🔗 **S3 Bucket Reports:** `s3://my-weather-reports-marathi/`  
@@ -29,7 +30,8 @@ It uses **AWS Lambda, DynamoDB, SNS, S3**, and **Python** to automate weather no
 ---
 ![output](images/AWS serverless weather report flowchart.png)
 ## 🌤️ Project Overview
-
+![output](images/02.png)
+![output](images/o1.png)
 This system has **two main AWS Lambda functions**:
 
 ### **1️⃣ Hourly Weather Alert Lambda**
