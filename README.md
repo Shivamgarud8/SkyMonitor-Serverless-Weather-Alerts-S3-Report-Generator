@@ -18,7 +18,7 @@ It uses **AWS Lambda, DynamoDB, SNS, S3**, and **Python** to automate weather no
 
 ---
 ![output](images/02.png)
-![output](images/01.png)
+![output](images/o1.png)
 ## 🌐 Live Project Demo
 
 🔗 **S3 Bucket Reports:** `s3://my-weather-reports-marathi/`  
@@ -27,7 +27,7 @@ It uses **AWS Lambda, DynamoDB, SNS, S3**, and **Python** to automate weather no
 - Optional generated **weather report images** for sharing.  
 
 ---
-
+![output](images/AWS serverless weather report flowchart.png)
 ## 🌤️ Project Overview
 
 This system has **two main AWS Lambda functions**:
