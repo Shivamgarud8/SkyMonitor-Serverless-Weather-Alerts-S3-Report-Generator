@@ -17,7 +17,8 @@ It uses **AWS Lambda, DynamoDB, SNS, S3**, and **Python** to automate weather no
 ![Pillow](https://img.shields.io/badge/Pillow-Image%20Generation-red)
 
 ---
-
+![output](images/02.png)
+![output](images/01.png)
 ## 🌐 Live Project Demo
 
 🔗 **S3 Bucket Reports:** `s3://my-weather-reports-marathi/`  
@@ -41,7 +42,7 @@ This system has **two main AWS Lambda functions**:
   - 💡 Tips & motivational quotes
 - Stores all data in **DynamoDB**.
 - Optional backup: stores daily weather text file.
-![jenkins](images/j2.png)
+![jenkins](images/l1.png)
 
 ### **2️⃣ Daily Marathi Report Generator Lambda**
 - Triggered **daily at 8 AM** using **CloudWatch Event Rule**.
@@ -51,7 +52,7 @@ This system has **two main AWS Lambda functions**:
 - Optional: triggers **Python script** to generate a visually appealing **report image**.
 
 ---
-
+![output](images/l2.png)
 ## 🧩 Project Workflow Summary
 
 | 🧱 Step | ⚙️ Description | 🧰 Tools/Technologies |
@@ -68,9 +69,9 @@ This system has **two main AWS Lambda functions**:
 ---
 ### **Environment variables**
 ---
-![jenkins](images/j2.png)
+![jenkins](images/ev.png)
 
-
+![output](images/s31.png)
 
 ## 🔐 AWS IAM Role for Lambda Functions
 
@@ -84,6 +85,7 @@ All Lambda functions in this project run under a dedicated **IAM Role** to secur
 - Grants **access to DynamoDB** for storing hourly weather data.  
 - Grants **access to S3** for uploading Marathi reports and images.  
 - Enables logging to **CloudWatch Logs** for monitoring and debugging.
+![output](images/iam.png)
 
 ### **Attached Policies (Minimum Privileges Recommended)**
 
@@ -93,6 +95,8 @@ All Lambda functions in this project run under a dedicated **IAM Role** to secur
 | `AmazonS3FullAccess` | Upload and retrieve weather reports and images in S3. |
 | `AmazonSNSFullAccess` | Publish alerts via SNS email/SMS. |
 | `AWSLambdaBasicExecutionRole` | Basic Lambda execution permissions including CloudWatch logging. |
+![output](images/d.png)
+
 
 > ⚠️ **Security Tip:** Always follow the **principle of least privilege**. For production, consider **custom policies** limiting access only to the required S3 bucket, DynamoDB table, and SNS topic.
 
